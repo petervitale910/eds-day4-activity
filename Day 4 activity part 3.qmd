@@ -1,0 +1,33 @@
+---
+title: "Day 4 activities part 3"
+format: html
+editor: visual
+---
+
+#### Setup
+
+```{r}
+pacman::p_load("tidyverse", "skimr", "ggthemes", "GGally")
+```
+
+#### Activity 
+
+```{r}
+view(diamonds)
+
+#Lets check out these functions 
+names(diamonds) #gives the headers
+
+dim(diamonds) #dimensions of the object
+summary(diamonds) #Stats about the columns 
+head(diamonds)#first couple of lines
+tail (diamonds)#last couple of lines
+skim (diamonds) #more in depth summary?
+```
+
+#### Graphing
+
+```{r}
+ggpairs(diamonds, aes(x= price, y= carat))
+```
+
